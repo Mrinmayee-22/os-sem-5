@@ -1,0 +1,29 @@
+#!/bin/bash
+	echo “Hello World”
+	
+	VAR1=BASHSHELLSCRIPTING
+	echo $VAR1
+	echo "Convert to lower case"
+	
+	echo $VAR1 | tr '[A-Z]' '[a-z]'
+	
+	VAR1=bashshellscripting
+	echo "Convert to upper case"
+	echo $VAR1 | tr '[a-z]' '[A-Z]'
+	
+	VAR1=bashshell
+	VAR2=${VAR1^}
+	echo $VAR2
+	
+	VAR1=bashshell
+	VAR2=${VAR1^^[ade]}
+	echo $VAR2
+	
+	VAR1=SURENDRAKUMAR
+	VAR2=${VAR1,}
+	echo $VAR2
+	
+	VAR1=BASHSHELLSCRIPTING
+	VAR2=${VAR1,,[ADE]}
+	echo $VAR2
+	
